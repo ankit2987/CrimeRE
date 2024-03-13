@@ -1,10 +1,21 @@
 import React from 'react'
 import { Hom } from './Hom'
 import { Link } from 'react-router-dom'
+import CrimeCards from './CrimeCard'
+import CrimeAgaWomen from './CrimeAgaWomen'
+import CrimeRateVisualization from './CrimeRateVisualization'
+import CrimeAnalysis from './CrimeAnalysis'
 
 export const HomePage = () => {
-  return (
+  return (<div>
     <Hom/>
+    <CrimeRateVisualization/>
+    <CrimeAnalysis/>
+    <CrimeCards/>
+    <CrimeAgaWomen/>
+    </div>
+
+
   )
 }
 

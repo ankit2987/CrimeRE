@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export const CrimeViz = () => {
   const [visualizationType, setVisualizationType] = useState('state');
@@ -54,7 +55,7 @@ export const CrimeViz = () => {
         {/* Add more visualization options as needed */}
       </div>
 
-      <div className='tableauPlaceholder' id='viz1'>
+      <div className='tableauPlaceholder' id='viz1' style={{ textAlign: 'center' }}>
         {visualizationType === 'state' ? (
           <iframe
             title='Dashboard 2'
@@ -72,6 +73,7 @@ export const CrimeViz = () => {
             allowFullScreen
           />
         )}
+        <p><Link to="/Other" >Crime Map</Link></p>
       </div>
     </div>
   );
