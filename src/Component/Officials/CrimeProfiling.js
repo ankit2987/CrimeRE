@@ -1,71 +1,100 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import Navbar from './Navbar'; // Make sure to import Navbar correctly
+import mockData from './mockData.json'; // Import JSON data
+
+// Styled components
+const Container = styled.div`
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 5px;
+`;
+
+const InputField = styled.input`
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 300px;
+`;
+
+const SubmitButton = styled.button`
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+`;
+
+const Error = styled.p`
+  color: red;
+`;
+
+const DataContainer = styled.div`
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+`;
+
+const DataTitle = styled.h3`
+  margin-bottom: 10px;
+`;
 
 export const CrimeProfiling = () => {
-  const [crimeProfiles, setCrimeProfiles] = useState([]);
+  const [aadharNumber, setAadharNumber] = useState('');
+  const [data, setData] = useState(null);
+  const [error, setError] = useState('');
 
-  useEffect(() => {
-    // Simulated JSON data
-    const crimeData = [
-      {
-        "aadharId": "123456789012",
-        "name": "John Doe",
-        "age": 35,
-        "gender": "Male",
-        "address": "123 Main St, City, Country",
-        "previousCrime": "Theft",
-        "crimeDescription": "Stole items from a local store.",
-        "warrant": true
-      },
-      {
-        "aadharId": "987654321098",
-        "name": "Jane Smith",
-        "age": 28,
-        "gender": "Female",
-        "address": "456 Elm St, City, Country",
-        "previousCrime": "Assault",
-        "crimeDescription": "Got into a physical altercation with a neighbor.",
-        "warrant": false
-      },
-      {
-        "aadharId": "543216789012",
-        "name": "Michael Johnson",
-        "age": 42,
-        "gender": "Male",
-        "address": "789 Oak St, City, Country",
-        "previousCrime": "Drug Possession",
-        "crimeDescription": "Found in possession of illegal drugs.",
-        "warrant": true
-      }
-    ];
+  const fetchData = () => {
+    // Simulate fetching data from JSON
+    const fetchedData = mockData.find(item => item.aadharNumber === aadharNumber);
 
-    // Set the crime profiles from the JSON data
-    setCrimeProfiles(crimeData);
-  }, []);
+    if (fetchedData) {
+      setData(fetchedData);
+      setError('');
+    } else {
+      setData(null);
+      setError('No data found for the provided Aadhar card number.');
+    }
+  };
+
+  const handleInputChange = (event) => {
+    setAadharNumber(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    fetchData();
+  };
 
   return (
     <div>
-      <h1>Crime Profiling</h1>
-      {crimeProfiles.map((profile, index) => (
-        <div key={index} style={profileStyle}>
-          <h2>Profile {index + 1}</h2>
-          <p><strong>Aadhar ID:</strong> {profile.aadharId}</p>
-          <p><strong>Name:</strong> {profile.name}</p>
-          <p><strong>Age:</strong> {profile.age}</p>
-          <p><strong>Gender:</strong> {profile.gender}</p>
-          <p><strong>Address:</strong> {profile.address}</p>
-          <p><strong>Previous Crime:</strong> {profile.previousCrime}</p>
-          <p><strong>Crime Description:</strong> {profile.crimeDescription}</p>
-          <p><strong>Warrant:</strong> {profile.warrant ? 'Yes' : 'No'}</p>
-        </div>
-      ))}
+      <Navbar />
+      <Container>
+        <h2>Enter Aadhar Card Number</h2>
+        <form onSubmit={handleSubmit}>
+          <InputField
+            type="text"
+            value={aadharNumber}
+            onChange={handleInputChange}
+            placeholder="Enter Aadhar Card Number"
+          />
+          <SubmitButton type="submit">Fetch Data</SubmitButton>
+        </form>
+        {error && <Error>{error}</Error>}
+        {data && (
+          <DataContainer>
+            <DataTitle>Aadhar Data</DataTitle>
+            <p><strong>Name:</strong> {data.name}</p>
+            <p><strong>Address:</strong> {data.address}</p>
+            <p><strong>Previous Crime:</strong> {data.previousCrime}</p>
+            <p><strong>Description of the Crime:</strong> {data.description}</p>
+            <p><strong>Warrant Status:</strong> {data.warrant ? 'Yes' : 'No'}</p>
+            {/* Add more data fields as needed */}
+          </DataContainer>
+        )}
+      </Container>
     </div>
   );
 };
-
-// CSS styles
-const profileStyle = {
-  border: '2px solid black',
-  padding: '10px',
-  marginBottom: '20px',
-};
-

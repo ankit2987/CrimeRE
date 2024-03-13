@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Hom } from './Hom';
 
 export const AskAI = () => {
   const [question, setQuestion] = useState('');
@@ -33,6 +34,8 @@ export const AskAI = () => {
   };
 
   return (
+    <div>
+    <Hom/>
     <div className="ask-ai-container">
       <h1>Ask for AI Assistance</h1>
       <form onSubmit={handleSubmit}>
@@ -98,6 +101,7 @@ export const AskAI = () => {
           margin: 0;
         }
       `}</style>
+    </div>
     </div>
   );
 };

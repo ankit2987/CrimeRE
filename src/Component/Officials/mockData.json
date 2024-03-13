@@ -1,0 +1,83 @@
+[
+    {
+      "aadharNumber": "123456789012",
+      "name": "John Doe",
+      "address": "123 Main St, City, Country",
+      "previousCrime": "Theft",
+      "description": "Stole a car",
+      "warrant": true
+    },
+    {
+      "aadharNumber": "234567890123",
+      "name": "Jane Smith",
+      "address": "456 Elm St, Town, Country",
+      "previousCrime": "Assault",
+      "description": "Physical altercation",
+      "warrant": false
+    },
+    {
+      "aadharNumber": "345678901234",
+      "name": "Alice Johnson",
+      "address": "789 Oak St, Village, Country",
+      "previousCrime": "Burglary",
+      "description": "Broke into a house",
+      "warrant": true
+    },
+    {
+      "aadharNumber": "456789012345",
+      "name": "Bob Williams",
+      "address": "987 Pine St, Suburb, Country",
+      "previousCrime": "Drug Possession",
+      "description": "Found with illegal substances",
+      "warrant": false
+    },
+    {
+      "aadharNumber": "567890123456",
+      "name": "Emily Brown",
+      "address": "654 Cedar St, Hamlet, Country",
+      "previousCrime": "Shoplifting",
+      "description": "Stole items from a store",
+      "warrant": true
+    },
+    {
+      "aadharNumber": "678901234567",
+      "name": "Michael Davis",
+      "address": "321 Walnut St, Countryside, Country",
+      "previousCrime": "Vandalism",
+      "description": "Damaged property",
+      "warrant": false
+    },
+    {
+      "aadharNumber": "789012345678",
+      "name": "Sophia Miller",
+      "address": "876 Maple St, Outskirts, Country",
+      "previousCrime": "Fraud",
+      "description": "Engaged in fraudulent activity",
+      "warrant": true
+    },
+    {
+      "aadharNumber": "890123456789",
+      "name": "James Wilson",
+      "address": "543 Birch St, Wilderness, Country",
+      "previousCrime": "DUI",
+      "description": "Driving under the influence",
+      "warrant": false
+    },
+    {
+      "aadharNumber": "901234567890",
+      "name": "Olivia Taylor",
+      "address": "210 Pineapple St, Remote Area, Country",
+      "previousCrime": "Arson",
+      "description": "Set fire to a building",
+      "warrant": true
+    },
+    {
+      "aadharNumber": "012345678901",
+      "name": "William Anderson",
+      "address": "789 Peach St, Farmland, Country",
+      "previousCrime": "Robbery",
+      "description": "Stole money from a bank",
+      "warrant": false
+    }
+  ]
+  

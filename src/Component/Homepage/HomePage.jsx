@@ -9,8 +9,10 @@ import CrimeAnalysis from './CrimeAnalysis'
 export const HomePage = () => {
   return (<div>
     <Hom/>
-    <CrimeRateVisualization/>
+    
     <CrimeAnalysis/>
+
+    <CrimeRateVisualization/>
     <CrimeCards/>
     <CrimeAgaWomen/>
     </div>

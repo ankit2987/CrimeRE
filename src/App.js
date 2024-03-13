@@ -31,7 +31,7 @@ function App() {
     <Route path = 'crime-prediction' element = {<CrimePrediction/>} ></Route>
     
     <Route path = 'crime-profiling' element = {<CrimeProfiling/>} ></Route>
-    <Route path = 'crime-reports' element = {<Crimereports/>} ></Route>
+    <Route path = 'crime-reports' element = {<CrimeReporting/>} ></Route>
     <Route path = 'home' element = {<Home/>} ></Route>
 
     <Route path = 'other' element = {<Other/>} ></Route>
