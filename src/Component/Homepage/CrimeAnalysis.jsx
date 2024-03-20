@@ -1,15 +1,17 @@
 import React from 'react';
+import logo from './images/27884383_white_linen_texture.jpg';
+import logo1 from './images/Analysis-amico.png';
 
 const CrimeAnalysis = () => {
   const styles = `
     .crime-analysis-container {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start; /* Align items to the start of the flex container */
       padding: 20px;
-      border: 2px solid #007bff; /* Added border */
+      border: 0px solid #007bff; /* Added border */
       border-radius: 8px;
-      background-color: #f8f9fa; /* Added background color */
+      
     }
 
     .crime-analysis-content {
@@ -18,49 +20,71 @@ const CrimeAnalysis = () => {
     }
 
     .crime-analysis-title {
-      font-size: 28px; /* Increased font size */
+      position: relative;
+      left: 0%;
+      top: 10px; /* Adjust top value to move the title up or down */
+      font-size: 30px; 
+      
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333333; 
+    }
+    .crime-analysis-title1 {
+      position: relative;
+      left: -150%;
+      top: 10px; /* Adjust top value to move the title up or down */
+      font-size: 45px; 
       font-weight: bold;
       margin-bottom: 20px;
-      color: #007bff; /* Changed text color to blue */
+      text-align: center;
+      color: #333333; 
     }
 
     .crime-analysis-text {
-      font-size: 18px; /* Increased font size */
+      font-size: 16px; /* Increased font size */
       line-height: 1.6;
       margin-bottom: 20px;
     }
 
     .crime-analysis-img {
-      flex: 1;
-      max-width: 300px;
+      max-width: 40%; /* Set the maximum width to ensure the image stays within the container */
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box shadow */
+      position: relative;
+      top: 5px;
+      left: -65px;
+      
+    }
+
+    .crime-analysis-list {
+      position: relative;
+      top: 220px;
+      left: 300px;
+    }
+
+    .crime-analysis-list li {
+      margin-bottom: 10px; /* Adjust margin-bottom to create a gap between list items */
     }
   `;
 
   return (
     <>
       <style>{styles}</style>
-      <div className="crime-analysis-container">
-        <div className="crime-analysis-content">
-          <div className="crime-analysis-title">Explore Crime Trends in India</div>
-          <div className="crime-analysis-text">
-            Welcome to <strong>Indian Crime Analysis</strong>, your premier destination for comprehensive insights into crime trends and statistics across India. We are dedicated to providing you with accurate and up-to-date information on various aspects of crime, helping you better understand the dynamics of criminal activities in the country.
+      <div 
+       style={{ backgroundImage: `url(${logo})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'top', height:678 , width:1515 , overflow: 'hidden'}}>
+        <div className="crime-analysis-container">
+          <div className="crime-analysis-content">
+            <div className="crime-analysis-title" style={{ top: '180px' , left: '-50px' }}> <div className="crime-analysis-subtitle"  >Welcome to</div>
+            <div className="crime-analysis-title1" style={{ left: '149.5px' , margin : '-20px' }}>Indian Crime Analysis</div></div>
+            <ul className="crime-analysis-text crime-analysis-list">
+              <li>Premier destination for comprehensive crime insights in India.</li>
+              <li>Access accurate & up-to-date crime information.</li>
+              <li>Explore crime data by region, offense type & time.</li>
+              <li>Foster safer society through awareness & evidence-based decisions.</li>
+              <li>Join us. Explore Indian Crime Analysis today.</li>
+            </ul>
           </div>
-          <div className="crime-analysis-text">
-            Whether you're a concerned citizen or a professional researcher, our platform offers analytical tools and resources designed to empower individuals, policymakers, researchers, and law enforcement agencies with the knowledge they need to make informed decisions and take proactive measures to address and prevent crime.
-          </div>
-          <div className="crime-analysis-text">
-            Explore crime data by region, type of offense, time period, and various other parameters, gaining valuable insights into the factors contributing to crime and the effectiveness of crime prevention initiatives.
-          </div>
-          <div className="crime-analysis-text">
-            Our mission is to foster a safer and more secure society by promoting awareness, transparency, and <strong>evidence-based decision-making</strong> in the field of crime prevention and law enforcement.
-          </div>
-          <div className="crime-analysis-text">
-            Join us in our endeavor to make India a safer place for all its citizens. Explore <strong>Indian Crime Analysis</strong> today and take a step towards a better understanding of crime in India.
-          </div>
+          <img className="crime-analysis-img" src={logo1} alt="Types of Crimes" />
         </div>
-        <img className="crime-analysis-img" src="https://legalvidhiya.com/wp-content/uploads/2022/01/Screenshot-2022-01-23-191301-2-1024x608.png" alt="Types of Crimes" />
       </div>
     </>
   );

@@ -11,9 +11,9 @@ export const HomePage = () => {
     <Hom/>
     
     <CrimeAnalysis/>
-
-    <CrimeRateVisualization/>
     <CrimeCards/>
+    <CrimeRateVisualization/>
+    
     <CrimeAgaWomen/>
     </div>
 

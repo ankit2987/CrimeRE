@@ -2,18 +2,20 @@ import React from 'react';
 
 const CrimeRateVisualization = () => {
   const styles = `
-    .crime-rate-container {
-      width: 100%; /* Take full width of the screen */
-      border: 2px solid #ccc; /* Add border */
-      margin: 0 auto; /* Center horizontally */
-      max-width: 1216px; /* Limit maximum width */
-    }
+  .crime-rate-container {
+    width: 100%; /* Take full width of the screen */
+    border: 0px solid #ccc; /* Add border */
+    margin: 25px auto; /* Center horizontally */
+    max-width: 1250px; /* Limit maximum width */
+    display: block; /* Ensure it behaves like a block element */
+  }
+  
 
     .crime-rate-container iframe {
       width: 100%;
       height: 991px;
       display: block;
-      margin: 0 auto;
+      margin: 10px;
     }
   `;
 
