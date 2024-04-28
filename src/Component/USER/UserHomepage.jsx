@@ -14,7 +14,6 @@ export const UserHomepage = () => {
         </nav>
       </header>
       <main>
-        <h1>Welcome to User Homepage</h1>
         {/* Your homepage content goes here */}
       </main>
       <style>{`

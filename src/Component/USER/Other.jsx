@@ -35,8 +35,8 @@ export const Other = () => {
         <iframe
           title='More knowledge about the crime'
           src='https://public.tableau.com/views/FinalProjectOnCrimesInIndia/Dashboard?:embed=y&:showVizHome=no&:host_url=https%3A%2F%2Fpublic.tableau.com%2F&:embed_code_version=3&:site_root=&:name=FinalProjectOnCrimesInIndia%2FDashboard&:tabs=yes&:toolbar=yes&:display_static_image=yes&:display_spinner=yes&:display_overlay=yes&:display_count=yes&:language=en-US'
-          width='800'
-          height='600'
+          width='1400'
+          height='1000'
           allowFullScreen
           style={{ border: 'none', margin: '0 auto' }}
         />
