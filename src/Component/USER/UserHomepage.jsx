@@ -7,9 +7,13 @@ export const UserHomepage = () => {
       <header>
         <nav>
           <ul>
+              <li><Link to = "/user-home">Home</Link></li>
             <li><Link to="/crime-report">Report Crime</Link></li>
+            
+            
             <li><Link to="/crime-map">Crime Maps</Link></li>
             <li><Link to="/crime-prediction">Crime Prediction</Link></li>
+            <li><Link to="/">Logout</Link></li>
           </ul>
         </nav>
       </header>

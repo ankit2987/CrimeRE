@@ -24,10 +24,14 @@ const CrimeRateVisualization = () => {
       <style>{styles}</style>
       <div className="crime-rate-container">
         <iframe
-          title="Crime Rate Visualization"
-          src="https://public.tableau.com/views/CrimeRateIndia_17102512365960/CrimeRate?:embed=y&:display_count=yes&:showVizHome=no"
-          frameBorder="0"
-        ></iframe>
+  title="Crimes in India"
+  src="https://public.tableau.com/views/CrimesinIndia_17097922030150/CrimesinIndia?:embed=y&:showVizHome=no"
+  width="1300"
+  height="927"
+  frameborder="0"
+  scrolling="yes"
+></iframe>
+
       </div>
     </>
   );

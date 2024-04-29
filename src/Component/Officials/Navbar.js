@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
         <Link to="/crime-reports" style={navLinkStyle}>Crime Reports</Link>
         <Link to="/crime-profiling" style={navLinkStyle}>Crime Profiling</Link>
         <Link to="/crime-map" style={navLinkStyle}>Crime Map</Link>
+        <Link to="/" style={navLinkStyle}>Logout</Link>
       </div>
     </nav>
   );

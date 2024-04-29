@@ -15,6 +15,7 @@ import { CrimeProfiling } from './Component/Officials/CrimeProfiling.js';
 import { Crimereports } from './Component/Officials/Crimereports.js';
 import { Home } from './Component/Officials/Home.js';
 import { Other } from './Component/USER/Other.jsx';
+import { UserHome } from './Component/USER/UserHome.jsx';
 
 
 
@@ -31,8 +32,9 @@ function App() {
     <Route path = 'crime-prediction' element = {<CrimePrediction/>} ></Route>
     
     <Route path = 'crime-profiling' element = {<CrimeProfiling/>} ></Route>
-    <Route path = 'crime-reports' element = {<CrimeReporting/>} ></Route>
+    <Route path = 'crime-reports' element = {<Crimereports/>} ></Route>
     <Route path = 'home' element = {<Home/>} ></Route>
+    <Route path = 'user-home' element = {<UserHome/>}></Route>
 
     <Route path = 'other' element = {<Other/>} ></Route>
     </Routes>
