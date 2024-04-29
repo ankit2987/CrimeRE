@@ -23,6 +23,18 @@ export const CrimeViz = () => {
       <div style={styles.container}>
         <table className="navigation-table" style={styles.navigationTable}>
           <tbody>
+          <div style={{
+        position: 'relative',
+        top: '380px', 
+        left: '-5px', 
+        display: 'inline-block',
+        padding: '1px',
+        background: 'white',
+        
+        height: '50px',
+        width: '100%',
+      }}>
+        </div>
             <tr>
               <td colSpan="2" style={styles.navigationHeader}><b>Navigation Table</b></td>
             </tr>

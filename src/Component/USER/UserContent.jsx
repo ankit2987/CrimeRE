@@ -1,7 +1,7 @@
 import React from 'react'
-import CrimeAnalysis from '../Homepage/CrimeAnalysis'
-import CrimeRateVisualization from '../Homepage/CrimeRateVisualization'
-import CrimeCard from '../Homepage/CrimeCard'
+import CrimeAnalysis from '../USER/CrimeAnalysislogin'
+import CrimeRateVisualization from '../USER/CrimeRateVisualizationlogin'
+import CrimeCard from '../USER/CrimeCardlogin'
 const UserContent = () => {
   return (
     <div>

@@ -8,6 +8,9 @@ const StyledIframe = styled.iframe`
   border: none; /* Remove iframe border */
   display: block;
   margin: auto;
+  position: relative;
+      top: 500px;
+      left: 0%;
 `;
 
 const CrimeAgaWomen = () => {

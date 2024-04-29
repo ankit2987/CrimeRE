@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export const Hom = () => {
   return (
     <div>
-      <nav className="navbar">
+      <nav className="navbar" style={{ position: 'fixed', top: '0', width: '100%', zIndex: '1000' }}>
         <div className="nav-title">India Crime Analysis</div>
         <ul className="nav-links">
           <li><Link to="/" className="nav-link">Home</Link></li>
@@ -33,6 +33,7 @@ export const Hom = () => {
           padding: 0;
           display: flex;
           gap: 20px;
+          margin-right: 25px;
         }
         .nav-links li {
           display: inline;

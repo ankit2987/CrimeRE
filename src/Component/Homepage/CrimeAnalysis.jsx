@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './images/27884383_white_linen_texture.jpg';
 import logo1 from './images/Analysis-amico.png';
+import { Link } from 'react-router-dom';
 
 const CrimeAnalysis = () => {
   const styles = `
@@ -70,7 +71,7 @@ const CrimeAnalysis = () => {
     <>
       <style>{styles}</style>
       <div 
-       style={{ backgroundImage: `url(${logo})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'top', height:678 , width:1515 , overflow: 'hidden'}}>
+       style={{ backgroundImage: `url(${logo})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'top', height:692 , width:1515 , overflow: 'hidden'}}>
         <div className="crime-analysis-container">
           <div className="crime-analysis-content">
             <div className="crime-analysis-title" style={{ top: '180px' , left: '-50px' }}> <div className="crime-analysis-subtitle"  >Welcome to</div>
@@ -81,9 +82,39 @@ const CrimeAnalysis = () => {
               <li>Explore crime data by region, offense type & time.</li>
               <li>Foster safer society through awareness & evidence-based decisions.</li>
               <li>Join us. Explore Indian Crime Analysis today.</li>
+              <div style={{
+                    position: 'relative',
+                    display: 'inline-block',
+                    padding: '10px',
+                    background: 'black', // Change the color to black (rgba values for black)
+                    borderRadius: '5px',
+                    boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',
+                    backdropFilter: 'blur(5px)',
+                    height: '20px',
+                    width: '120px',
+                    position:' relative' ,
+                        left: '130px',
+                        top: '10px',
+  
+}}>
+  <h2 style={{ margin: '0' }}>
+    <Link to="/login" className="nav-link" style={{ textDecoration: 'none', color: 'white'  , position: 'relative' ,left: '30px' ,top: '-12px' , textAlign: 'center'}}>
+      Login
+    </Link>
+  </h2>
+</div>
+
+
             </ul>
           </div>
-          <img className="crime-analysis-img" src={logo1} alt="Types of Crimes" />
+          <img
+  className="crime-analysis-img"
+  src={logo1}
+  alt="Types of Crimes"
+  style={{ position: 'relative', top: '50px', left: '-50px', width: '38%', height: '50%' }}
+/>
+
+
         </div>
       </div>
     </>

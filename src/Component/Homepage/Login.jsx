@@ -64,10 +64,10 @@ export const Login = () => {
 
   return (
     <div 
-       style={{ backgroundImage: `url(${logo2})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'top', height:729 , width:1535 , overflow: 'hidden'}}>
+       style={{ backgroundImage: `url(${logo2})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'top', height:695 , width:1535 , overflow: 'hidden'}}>
     
       <Hom />
-      <div style={{ backgroundImage: `url(${logo})`, backgroundSize: 'auto 100%', backgroundRepeat: 'no-repeat', backgroundPosition: '85% -6500% ', minHeight: '95vh', maxWidth: '100vw',overflow: 'hidden' }}></div>
+      <div style={{ backgroundImage: `url(${logo})`, backgroundSize: 'auto 100%', backgroundRepeat: 'no-repeat', backgroundPosition: '85% -6000% ', minHeight: '95vh', maxWidth: '100vw',overflow: 'hidden', position: 'relative',  top: '33px', left: '30px'  }}></div>
 
       <div className="login-button-container">
         <button className="login-button" onClick={() => handleLoginTypeChange('user')}>User Login</button>
@@ -126,7 +126,7 @@ export const Login = () => {
   .login-form {
     max-width: 400px;
     position: relative;
-    top: -630px; /* Adjust as needed */
+    top: -580px; /* Adjust as needed */
     left: -200px; /* Adjust as needed */
     margin: 50px auto;
     padding: 20px;
@@ -178,11 +178,12 @@ export const Login = () => {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    
   }
 
   .login-button {
     position: relative;
-    top: -620px; /* Adjust as needed */
+    top: -560px; /* Adjust as needed */
     left: -200px; /* Adjust as needed */
     width: 150px; /* Adjust width as needed */
     margin: 0 10px; /* Adjust margin as needed */
