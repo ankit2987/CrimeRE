@@ -22,6 +22,20 @@ export const CrimePrediction = () => {
   return (
     <>
     <UserHomepage/>
+
+    <div style={{
+        position: 'relative',
+        top: '380px', 
+        left: '50px', 
+        display: 'inline-block',
+        padding: '1px',
+        background: 'white',
+        
+        height: '50px',
+        width: '1400px',
+      }}>
+        </div>
+
     <div className='tableauPlaceholder' id='viz1714394244312' style={{ position: 'relative' }}>
       <noscript>
         <a href='#'>

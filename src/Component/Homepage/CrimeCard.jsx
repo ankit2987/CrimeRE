@@ -102,55 +102,66 @@ const CrimeCards = () => {
       <div className="crime-cards-container">
       <div className="crimecard">
           <div className="card-content">
-            <h3 style = {{position: 'relative' , top: '0px' , left: '-480px' }} >{"Crime Profiling"}</h3>
-            <p  style = {{position: 'relative' , top: '0px' , left: '-401px' , margin: '-15px' }} >{"Crime profiling, also known as criminal profiling or offender profiling, is a method used by law enforcement agencies to identify characteristics and behavior patterns of potential suspects based on analysis of crime scenes and evidence. This practice integrates various disciplines such as psychology, criminology, and forensic science to create profiles of offenders. Profilers examine factors like modus operandi, victimology, and geographical patterns to develop hypotheses about the offender's demographics, personality traits, and possible motivations. While controversial, crime profiling can aid investigations by providing insights into the perpetrator's mindset, assisting in narrowing down suspect lists, and ultimately aiding in the apprehension of criminals."}</p>
-          </div>
+            <h3 style = {{position: 'relative' , top: '-200px' , left: '-0px' }} >{"Crime Profiling"}</h3>
+            <div style={{ position: 'relative', top: '-185px', left: '0px', margin: '-15px', textAlign: 'justify' }}>
+  <ul>
+  <li style={{ marginBottom: '13px' }}>Crime profiling, also known as criminal profiling or offender profiling, is a method used by law enforcement agencies to identify characteristics and behavior patterns of potential suspects based on analysis of crime scenes and evidence.</li>
+    <li style={{ marginBottom: '13px' }}>This practice integrates various disciplines such as psychology, criminology, and forensic science to create profiles of offenders.</li>
+    <li style={{ marginBottom: '13px' }}>Profilers examine factors like modus operandi, victimology, and geographical patterns to develop hypotheses about the offender's demographics, personality traits, and possible motivations.</li>
+    <li style={{ marginBottom: '13px' }}>While controversial, crime profiling can aid investigations by providing insights into the perpetrator's mindset, assisting in narrowing down suspect lists, and ultimately aiding in the apprehension of criminals.</li>
+  </ul>
+</div>
+</div>
         </div>
         <img
         className="crimeprofiling"
         src={Profiling}
         alt="profile"
-        style={{ maxWidth: '40%', borderRadius: '8px', position: 'relative', top: '-50px', left: '-1000px', width: '350px', height: '350px' }}
+        style={{ maxWidth: '40%', borderRadius: '8px', position: 'relative', top: '-135px', left: '-900px', width: '350px', height: '350px' }}
       />
-        <div className="crimecard1">
-          <div className="card-content">
-            <h3 style = {{position: 'relative' , top: '-20px' , left: '500px' }} >{"Crime Prediction"}</h3>
-            <p  style = {{position: 'relative' , top: '-20px' , left: '330px' , margin: '-15px' }}>{"Predict potential crime hotspots based on historical data and patterns."}</p>
-          </div>
-        </div>
-
-        <img
-        className="crimeprofiling"
-        src={Prediction}
-        alt="profile"
-        style={{ maxWidth: '40%', borderRadius: '8px', position: 'relative', top: '-160px', left: '30px', width: '450px', height: 'auto' }}
-      />
+       
         
         <div className="crimecard2">
           <div className="card-content">
-            <h3  style = {{position: 'relative' , top: '-170px' , left: '50px' }} >{"Crime Mapping"}</h3>
-            <p   style = {{position: 'relative' , top: '-170px' , left: '253px' , margin: '-15px' }}>{"Crime mapping is a technique used by law enforcement agencies to visualize and analyze spatial patterns of criminal activity within a geographical area. By plotting incidents of crime on maps, authorities can identify high-crime areas, trends, and hotspots. This information aids in resource allocation, strategic deployment of law enforcement personnel, and development of targeted crime prevention strategies. Advanced mapping technologies and geographic information systems (GIS) allow for the integration of various data sources to create comprehensive crime maps, facilitating informed decision-making in crime management."}</p>
-          </div>
+            <h3  style = {{position: 'relative' , top: '-15px' , left: '505px' }} >{"Crime Mapping"}</h3>
+            <div style={{ position: 'relative', top: '5px', left: '505px', margin: '-15px', textAlign: 'justify' }}>
+  <ul>
+    <li style={{ marginBottom: '13px' }}>Crime mapping is a technique used by law enforcement agencies to visualize and analyze spatial patterns of criminal activity within a geographical area.</li>
+    <li style={{ marginBottom: '13px' }}>By plotting incidents of crime on maps, authorities can identify high-crime areas, trends, and hotspots.</li>
+    <li style={{ marginBottom: '13px' }}>This information aids in resource allocation, strategic deployment of law enforcement personnel, and development of targeted crime prevention strategies.</li>
+    <li style={{ marginBottom: '13px' }}>Advanced mapping technologies and geographic information systems (GIS) allow for the integration of various data sources to create comprehensive crime maps, facilitating informed decision-making in crime management.</li>
+  </ul>
+</div>
+
+</div>
         </div>
 
         <img
         className="crimeprofiling"
         src={mapping}
         alt="profile"
-        style={{ maxWidth: '40%', borderRadius: '8px', position: 'relative', top: '-250px', left: '-970px', width: '370px', height: '370px' }}
+        style={{ maxWidth: '40%', borderRadius: '8px', position: 'relative', top: '-15px', left: '-900px', width: '370px', height: '370px' }}
       />
 
         <div className="crimecard3">
           <div className="card-content">
-            <h3  style = {{position: 'relative' , top: '-235px' , left: '180px' }} >{"Crime Management"}</h3>
-            <p   style = {{position: 'relative' , top: '-235px' , left: '0px' , margin: '-15px' }}>{"Crime management involves a multifaceted approach to addressing criminal activities within a community. Through proactive measures such as prevention programs and community policing initiatives, authorities aim to deter criminal behavior. Investigations rely on advanced techniques and cooperation among law enforcement agencies to identify and prosecute offenders. Additionally, rehabilitation efforts seek to reintegrate offenders into society and prevent recidivism. Collaboration between law enforcement, government agencies, and the community is essential for effective crime management."}</p>
-          </div>
+            <h3  style = {{position: 'relative' , top: '110px' , left: '225px' }} >{"Crime Management"}</h3>
+            <div style={{ position: 'relative', top: '130px', left: '225px', margin: '-15px', textAlign: 'justify' }}>
+  <ul>
+    <li style={{ marginBottom: '13px' }}>Crime management uses a multifaceted approach to tackle criminal activities.</li>
+    <li style={{ marginBottom: '13px' }}>Authorities employ prevention programs and community policing to deter criminal behavior.</li>
+    <li style={{ marginBottom: '13px' }}>Investigations utilize advanced techniques and cooperation among law enforcement agencies.</li>
+    <li style={{ marginBottom: '13px' }}>Rehabilitation efforts aim to reintegrate offenders into society and prevent recidivism.</li>
+    <li style={{ marginBottom: '13px' }}>Collaboration between law enforcement, government agencies, and the community is crucial for effectiveness.</li>
+  </ul>
+</div>
+</div>
 
           <img
         className="crimeprofiling"
         src={Management}
         alt="profile"
-        style={{ maxWidth: '55%', borderRadius: '8px', position: 'relative', top: '-400px', left: '450px', width: '600px', height: '390px' }}
+        style={{ maxWidth: '55%', borderRadius: '8px', position: 'relative', top: '-170px', left: '-430px', width: '600px', height: '390px' }}
       />
 
         </div>  

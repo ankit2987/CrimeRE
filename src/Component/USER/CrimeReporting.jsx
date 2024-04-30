@@ -302,10 +302,10 @@ export const CrimeReporting = () => {
       <StyledComponent />
       <UserHomepage/>
       
-      <img src={pic} alt="Project 16-09" style={{ position: 'relative', top: '-40px' , left: '20px', width: '500px', height: 'auto', display: 'block', margin: '0 auto' }} />
+      <img src={pic} alt="Project 16-09" style={{ position: 'relative', top: '50px' , left: '20px', width: '500px', height: 'auto', display: 'block', margin: '0 auto' }} />
 
 
-      <h1 style={{textAlign: 'center' , position: 'relative', top: '-250px' , left: '20px'}}>Report FIR</h1>
+      <h1 style={{textAlign: 'center' , position: 'relative', top: '-160px' , left: '20px'}}>Report FIR</h1>
 
       <Container1>
 

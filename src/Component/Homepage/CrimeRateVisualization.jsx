@@ -12,7 +12,7 @@ const CrimeRateVisualization = () => {
   
 
     .crime-rate-container iframe {
-      width: 100%;
+      width: 105%;
       height: 991px;
       display: block;
       margin: 10px;
@@ -21,6 +21,9 @@ const CrimeRateVisualization = () => {
 
   return (
     <>
+
+
+  
       <style>{styles}</style>
       <div className="crime-rate-container">
         <iframe
@@ -33,6 +36,17 @@ const CrimeRateVisualization = () => {
 ></iframe>
 
       </div>
+      <div style={{
+        position: 'relative',
+        top: '-120px', 
+        left: '50px', 
+        display: 'inline-block',
+        padding: '1px',
+        background: 'white',
+        height: '50px',
+        width: '1400px',
+      }}>
+        </div>
     </>
   );
 };
